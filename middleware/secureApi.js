@@ -3,7 +3,7 @@ const secureApi = (req, res, next) => {
   if (req.headers.authorization == "saminur1234") {
     next();
   } else {
-    res.send({ error: "invalid error" });
+    res.send({ error: "invalid error and error" });
   }
 };
 
